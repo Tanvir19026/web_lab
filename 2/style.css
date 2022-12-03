@@ -1,0 +1,22 @@
+.first{
+    width: 30%;
+    padding: 20px;
+    
+    height: 700px;
+    background-color:rgb(191, 194, 194);
+   
+}
+.flex{
+    display: flex;
+}
+.center{
+    text-align: center;
+    width:60%;
+    height: 700px;
+    background-color: rgb(124, 124, 195);
+}
+.right{
+    width: 10%;
+    height: 700px;
+    background-color: grey;
+}

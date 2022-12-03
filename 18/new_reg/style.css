@@ -1,0 +1,54 @@
+table, th, td {
+    border: 1px solid black;
+    text-align:center;
+    margin-Left:25px;
+    margin-bottom:25px;
+    padding:5px;
+    margin:0 auto;
+}
+.radio_btn{
+  margin:45px;
+  
+}
+.radio_btn input{
+  padding:15px;
+}
+.search_opt input{
+  width:300px;
+  margin:0 auto;
+  margin-top:5px;
+  
+}
+.search_opt button{
+  width:200px;
+  margin-left:50px;
+}
+.search_opt h3{
+  margin:0 auto;
+  padding:5px;
+  margin-top:5px;
+}
+.search_opt{
+ 
+  padding:10px;
+  text-align:center;
+  border:2px solid black;
+}
+
+.s_section{
+    width:450px;
+    border:2px solid black;
+   
+}
+
+*{
+    
+    margin:10px;
+  
+}
+
+label{
+    font-size:15px;
+    font-weight: 600;
+    color:brown;
+}

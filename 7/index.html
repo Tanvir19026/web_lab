@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Enter Marks</title>
+<script type="text/javascript">
+
+function submit_marks() {
+let sub1 = parseInt(document.getElementById('s1').value);
+let sub2 = parseInt(document.getElementById('s2').value);
+let sub3 = parseInt(document.getElementById('s3').value);
+let sub4 = parseInt(document.getElementById('s4').value);
+let sub5 = parseInt(document.getElementById('s5').value);
+let sub6 = parseInt(document.getElementById('s6').value);
+let total = sub1+sub2+sub3+sub4+sub5+sub6;
+let per  = total/6;
+let grade;
+
+if (per<33) {
+grade = 'F';
+} 
+else if(per>=40 && per<=49){
+grade = 'C';
+}
+else if(per>=50 && per<=59){
+grade = 'B';
+}
+
+else if(per>=60 && per<=69){
+grade = 'A-';
+}
+
+else if(per>=70 && per<=79){
+grade = 'A';
+}
+
+else if(per>=80){
+grade = 'A+';
+}
+
+else{
+grade = "Invalid or Failed";
+}
+document.getElementById("demo").innerHTML = "Your Total Marks : "+total+"<br>Your Percentage : "+per+"<br>Your Grade : "+grade;
+
+                
+}
+</script>
+</head>
+<body>
+    <div class="userSection">
+    <h1>Enter Students Marks</h1>
+    <input type="text" id="s1" placeholder="Enter English Marks"><br>
+    <input type="text" id="s2" placeholder="Enter IcT Marks"><br>
+    <input type="text" id="s3" placeholder="Enter Biology Marks"><br>
+    <input type="text" id="s4" placeholder="Enter Economics Marks"><br>
+    <input type="text" id="s5" placeholder="Enter Maths Marks"><br>
+    <input type="text" id="s6" placeholder="Enter Account Marks"><br>
+     <br>
+   <button onclick="submit_marks()">Submit</button>
+
+    <div id="demo"></div>
+</div>
+</body>
+</html>
